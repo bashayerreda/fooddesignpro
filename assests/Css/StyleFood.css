@@ -1,0 +1,527 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+
+
+@font-face {
+    font-family: 'balletregular';
+    src: url('../fonts/ballet-regular-variablefont_opsz-webfont.woff2') format('woff2'),
+         url('../fonts//ballet-regular-variablefont_opsz-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'pacificoregular';
+    src: url('../fonts/pacifico-regular-webfont.woff2') format('woff2'),
+         url('../fonts/pacifico-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+    font-family: 'balletregular'
+}
+
+/* genral*/
+h1{
+    text-align: center;
+    padding: 7%;
+    font-size: 42px;
+    font-family: 'pacificoregular';
+    font-weight: 10;
+  }
+  h2{
+    text-align: center;
+    padding: 5%;
+    
+    font-family: 'pacificoregular';
+    font-weight: 5;
+  }
+  h3{
+    text-align: center;
+    padding: 3%;
+    
+    font-family: 'pacificoregular';
+    font-weight: 2;
+  }
+  
+h6{
+    font-size: 50px;
+}
+h2{
+    font-size: 80px;
+}
+h4,h3{
+    font-size: 70px;
+}
+p{
+    color: gray;
+    font-size: 25px;
+    margin-top: 20px;
+}
+.container{
+    width: 80%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+section{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+img{
+    width: 100%;
+    display: block;
+}
+a{
+    text-decoration: none;
+    display: inline-block;  
+    padding: 10px;
+    color:black;
+}
+ul{
+    list-style: none;
+}
+
+/* nav bar*/
+.navbar{
+    width: 100%;
+    position: absolute;
+    top: 0; 
+}
+.navbar .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-top:10px; 
+}
+.links {
+    display: flex; 
+}
+.navbar .fas{
+    border: 1px white solid;
+    color: rgb(255, 254, 254);
+    padding: 5px;
+}
+
+
+/* header*/
+.slider_area {
+    background-image: url("../images/header.png");
+   
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #fff;
+  
+}
+.slider_area h1 {
+    font-size: 100px;
+}
+.slider_area .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+/* recipes section*/
+.recepie_area .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.single_recepie h3{
+    margin-top: 20px;
+    font-size: 25px;
+}
+.single_recepie a{
+    border: 3px solid ;
+    border-color: yellow;
+    border-radius: 25px;
+    margin-top: 10px;
+    font-size: 14px;
+}
+.single_recepie span{
+    padding-top: 30px;
+}
+
+/* recipes-video section*/
+.recipes-video .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.recipes-video_item{
+    width: 50%;
+    
+}
+.recipes-video_item a{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background: #ffc000;
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    line-height: 80px;
+ 
+}
+.recipes-video_item h2{
+    font-size: 50px; 
+
+  }
+  .recipes-video_item>p{
+    width: 70%;
+    margin-bottom: 30px;
+  }
+  .recipes-video_item_play {
+      display: flex;
+      align-items: flex-start;  
+  }
+  .recipes-video_item_play h3{
+    color: black;
+}
+  .recipes-video_item_play p{
+    margin-top: 5px;
+}
+.recipes-video_figures{
+    padding-left: 10%;
+    width: 50%;
+    position: relative;
+}
+.big_img{
+    width: 100%;
+}
+.small_thumb{
+   position: absolute;
+  top: 60px;
+  left: 0;
+}
+.small_thumb_2{
+    position: absolute;
+  right: 68px;
+  bottom: -105px;
+}
+
+/* birthday-creation section*/
+  .dish_area .container{
+      margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .single_dish{
+      text-align: center;
+      border: 2px solid rgb(238, 238, 238);
+      border-radius: 15px;
+      margin: 0 auto;
+      width: 25%;
+      position: relative;
+      padding-top: 10%;
+  }
+  .single_dish .thumb{
+      width: 50%;
+      position: absolute;
+      top: -20%;
+      margin-left: 25%;
+  }
+  .single_dish h3{
+     color: black;
+     margin: 15px;
+      font-size: 35px;
+  }
+.single_dish p{
+    font-size: 18px;
+}
+
+ /* dicover recopes section*/
+  .latest_trand_area{
+       margin-bottom: 100px;
+      background-image: url("../images/banner.png");
+      text-align: center;
+      background-position: center;
+      margin-top: 100px;
+      background-size: cover;
+      height: 100vh;
+  }
+  .latest_trand_area .container{
+      flex-direction: column;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  .latest_trand_area a{
+      margin-top: 100px;
+      background-color:orange;
+      border-radius: 50px;
+      color: #fff;
+  }
+
+/* feadback section*/
+    .customer_feedback_area .container{
+       display: flex;
+       flex-wrap: wrap;
+       align-items: center;
+       justify-content: space-around;
+    }
+    .feedback_header{
+      text-align: center;
+
+    }
+    .feedback_article{
+        display: flex;
+        justify-content: space-between;
+    }
+    .feedback_item{
+        border: 3px solid rgb(238, 238, 238);
+        display: flex;
+        flex-wrap: wrap;
+        width: 49%;
+
+       padding: 20px;
+        margin-top: 50px;
+       justify-content:space-between;
+    }
+    .feedback_item figure{
+        width: 50%;
+    }
+    .feedback_item h3{
+        font-size: 30px;
+    }
+    .feedback_item p,h3,span{
+        margin-left: 20px;
+    }
+    .item{
+        display: flex;
+        flex-flow: row; 
+    }
+
+/* download section*/
+    .download_app_area {
+  padding-top: 100px;
+  padding-bottom: 320px;
+}
+
+
+.download_app_area .download_thumb {
+  position: relative;
+    padding-bottom: 30px;
+}
+
+.download_app_area .download_thumb .big_img {
+  padding-left: 100px;
+}
+
+.download_app_area .download_thumb .big_img img {
+  width: 100%;
+}
+
+.download_app_area .download_thumb .small_01 {
+  position: absolute;
+  top: 40px;
+  border-radius: 10px;
+
+}
+
+.download_app_area .download_thumb .small_02 {
+  position: absolute;
+  right: 60px;
+  border-radius: 10px;
+  bottom: -50px;
+
+}
+
+
+
+.download_app_area .download_text {
+  padding-left: 70px;
+}
+
+.download_app_area .download_text h3 {
+  font-size: 72px;
+  color: #000000;
+  line-height: 84px;
+  margin-bottom: 60px;
+}
+.download_app_area .container{
+  width: 80%;
+margin: auto;
+
+margin-left: 200px;
+margin-top: 100px;
+display:flex;
+}
+
+.download_app_area .download_text .download_android_apple a  {
+    display: inline-block;
+  padding: 20px 44px 20px 30px;
+  margin-right: 5px;
+  border: #eeeeee;
+  
+  text-decoration: none;
+   color: #000000;
+  
+   }
+  
+  .download_app_area .download_text .download_android_apple .download_link_apple  {
+    width: 200px;
+    height: 100px;
+    background-color : #ffc000;
+    border-radius: 8px;
+   display: flex;
+   font-size: 25px;
+   
+  
+  }
+.download_app_area .download_text .download_android_apple .download_link  {
+    width: 200px;
+    height: 100px;
+    border-radius: 8px;
+   display: flex;
+   font-size: 25px;
+}
+
+
+ /* footer section*/
+    .footer{
+        background-color: black;
+    }
+    .footer h3{
+        color: #fff;
+        font-size: 20px;
+    }
+    .footer a{
+        color:gray;
+    }
+    .footer .container {
+      padding: 100px;
+    }
+    .footer .container .nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;   
+    }
+    .subscribe{
+        padding-bottom: 50px; 
+    }
+    .subscribe h3,p{
+        padding-bottom: 25px;
+    }
+ 
+  
+    .email input{
+        width: 200px;
+        height: 30px;
+        padding-right: 25px;
+        border: 0;
+        color: white;
+        background-color: #eeeeee;
+        margin-left: 30px;
+    }
+    .email a{
+        background-color:rgb(202, 131, 24);
+        margin-left: -25px;
+        width: 26px;
+        height: 30px;
+        text-align: center;
+        padding: 4px;
+        padding-top: 4px;
+        border: 0;
+        color: white;  
+        margin-right: 20px; 
+    }
+    .social-media{
+        display: flex;
+        align-items: baseline;
+        justify-content:center;    
+    }
+    .social-media p{
+       flex-grow: 1;
+    }
+    .social-media a{
+        margin-top: 20px;
+        margin-right: 4px;
+        color: white;
+        opacity: 0.5;
+        font-size: 20px;
+        background-color: rgb(82, 79, 79);
+    }
+
+
+/* media*/
+    @media (max-width: 700px){
+        
+        .navbar .links{
+            display: none;
+           
+        }
+       }
+ 
+    @media (max-width: 1100px){
+        .recepie_area .container, 
+        .recipes-video .container, 
+        .dish_area .container,
+        .feedback_article, 
+        .download_app_area .container, 
+        .footer .container .nav {
+            display: flex;
+            flex-flow: column;
+        }
+        .single_recepie {
+            margin-bottom: 25px;
+        }
+        .single_dish{
+            margin-bottom: 40px;
+            margin-top: 40px;
+        }
+        .feedback_item{
+            width: 100%;
+        }
+        .download_thumb{
+            margin-bottom:  80px;
+            margin-right: 30px;
+            padding-left: 30px;
+        }
+        .single_dish{
+            width: 50%;
+            margin-bottom: 100px;  
+            margin-top: 100px;
+        }
+        .subscribe{
+            text-align: center;
+        }
+        .download_thumb, .download_text, .recipes-video_figures, .recipes-video_item{
+            width: 100%;
+        }
+        .birthday-creation_item figure{
+            top: -50%;
+        }
+
+    }
+
+
+    @media (max-width: 700px){
+        
+        .download_app_area .container{
+            display: flex;
+            flex-flow: column;
+            margin-left: 50px;
+           
+        }
+       }
